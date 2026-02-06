@@ -5,36 +5,76 @@
     <meta name="mobile-web-app-capable" content="yes">
     <title>Uniq Customz - Landing Page | Car Detailing Services in Perumbakkam</title>
     <meta name="description" content="Professional car detailing services in Perumbakkam. Paint protection film, ceramic coating, interior cleaning, and more.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="car detailing, paint protection film, ceramic coating, car wash, PPF, graphene coating, car painting, Perumbakkam, car detailing services">
+    <meta name="author" content="Uniq Customz">
+    <meta name="robots" content="index, follow">
+    <meta name="version" content="1.0.0">
+    <link rel="canonical" href="https://www.uniqcustomz.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.uniqcustomz.com/">
+    <meta property="og:title" content="Uniq Customz - Professional Car Detailing Services in Perumbakkam">
+    <meta property="og:description" content="Professional car detailing services in Perumbakkam. Paint protection film, ceramic coating, interior cleaning, and more.">
+    <meta property="og:image" content="https://www.uniqcustomz.com/assets/Unique Customz - Logo 1.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.uniqcustomz.com/">
+    <meta property="twitter:title" content="Uniq Customz - Professional Car Detailing Services">
+    <meta property="twitter:description" content="Professional car detailing services in Perumbakkam. Paint protection film, ceramic coating, interior cleaning, and more.">
+    <meta property="twitter:image" content="https://www.uniqcustomz.com/assets/Unique Customz - Logo 1.png">
+    
+    <!-- Performance & Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57C5CXMM');</script>
+    <!-- End Google Tag Manager -->
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57C5CXMM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- Header Section -->
     <header class="header" id="header">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-wrapper">
                     <div class="logo">
-                        <img src="assets/Unique Customz - Logo 1.png" alt="Uniq Customz Logo">
+                        <img src="assets/Unique Customz - Logo 1.png" alt="Uniq Customz Logo" width="150" height="50" loading="eager">
                     </div>
                     
                     <ul class="nav-menu" id="navMenu">
                         <li><a href="#home" class="nav-link active">Home</a></li>
                         <li><a href="#about" class="nav-link">About Us</a></li>
                         <li><a href="#services" class="nav-link">Services</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                     
                     <div class="nav-actions">
-                        <button class="phone-btn">
-                            <img src="assets/phone-icon.png" alt="Call Us">
+                        <button class="phone-btn" aria-label="Call Us" type="button">
+                            <img src="assets/phone-icon.png" alt="Call Us" width="24" height="24" loading="eager">
                         </button>
-                        <a href="tel:9840601420" class="cta-btn">Contact Us</a>
+                        <a href="tel:9840601420" class="cta-btn" aria-label="Contact Us by Phone">Contact Us</a>
                     </div>
                     
-                    <button class="hamburger" id="hamburger">
+                    <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" type="button" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -46,8 +86,9 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <video autoplay muted loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video" preload="metadata" aria-label="Car detailing video background">
             <source src="assets/Banner Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
         <div class="hero-overlay"></div>
         <div class="container">
@@ -61,11 +102,13 @@
                     Uniq Customz provides professional paint protection film, all kinds of coatings, and car wash services for complete car maintenance services.
                 </p>
                 <div class="hero-buttons">
-                    <a href="tel:9840601420" class="btn btn-primary">Contact Us</a>
+                    <a href="tel:9840601420" class="btn btn-primary" aria-label="Contact Us by Phone">Contact Us</a>
                     <a 
                         href="https://maps.app.goo.gl/4Xob44maLNAtgGvw5?g_st=aw" 
                         target="_blank" 
+                        rel="noopener noreferrer"
                         class="btn btn-secondary"
+                        aria-label="Get Directions to Uniq Customz"
                     >Get Directions</a>
                 </div>
             </div>
@@ -88,7 +131,7 @@
                     <div class="features-grid">
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <img src="assets/icon1.png" alt="Flawless Results">
+                                <img src="assets/icon1.png" alt="Flawless Results" width="60" height="60" loading="lazy">
                             </div>
                             <h3>Flawless Results</h3>
                             <p>Precision detailing delivers lasting shine, protection, and showroom-level finish.</p>
@@ -96,7 +139,7 @@
                         
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <img src="assets/icon2.png" alt="Trusted Professionals">
+                                <img src="assets/icon2.png" alt="Trusted Professionals" width="60" height="60" loading="lazy">
                             </div>
                             <h3>Trusted Professionals</h3>
                             <p>Certified experts provide reliable, high-quality car detailing services.</p>
@@ -127,8 +170,8 @@
         <div class="container">
             <div class="why-choose-content">
                 <div class="why-choose-images">
-                    <img src="assets/gallery/image-1.jpg" alt="Car Detailing" class="detail-img">
-                    <img src="assets/gallery/image-2.jpg" alt="Car Polishing" class="detail-img">
+                    <img src="assets/gallery/image-1.jpg" alt="Car Detailing" class="detail-img" loading="lazy" width="600" height="350">
+                    <img src="assets/gallery/image-2.jpg" alt="Car Polishing" class="detail-img" loading="lazy" width="600" height="350">
                 </div>
                 
                 <div class="why-choose-text">
@@ -138,7 +181,7 @@
                         We offer skilled car detailing with close attention to every detail and a customer-first approach. Our professionals ensure each vehicle receives superior care and finesse.
                     </p>
                     <div class="action-buttons">
-                        <a href="tel:9840601420" class="btn btn-primary">Contact Us</a>
+                        <a href="tel:9840601420" class="btn btn-primary" aria-label="Contact Us by Phone">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -156,42 +199,42 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="assets/images/ppf-service.jpg" alt="Paint Protection Film">
+                        <img src="assets/images/ppf-service.jpg" alt="Paint Protection Film" loading="lazy" width="400" height="320">
                     </div>
                     <h3 class="service-title">Paint Protection Film</h3>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="assets/images/ceramic-coating.jpg" alt="Ceramic Coating">
+                        <img src="assets/images/ceramic-coating.jpg" alt="Ceramic Coating" loading="lazy" width="400" height="320">
                     </div>
                     <h3 class="service-title">Ceramic Coating</h3>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="assets/images/interior-cleaning.jpg.jpeg" alt="Interior Foam Cleaning">
+                        <img src="assets/images/interior-cleaning.jpg.jpeg" alt="Interior Foam Cleaning" loading="lazy" width="400" height="320">
                     </div>
                     <h3 class="service-title">Interior Foam Cleaning</h3>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="assets/images/car-painting.jpg" alt="Car Painting">
+                        <img src="assets/images/car-painting.jpg" alt="Car Painting" loading="lazy" width="400" height="320">
                     </div>
                     <h3 class="service-title">Car Painting</h3>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="assets/images/graphene-coating.jpg" alt="Graphene Coating">
+                        <img src="assets/images/graphene-coating.jpg" alt="Graphene Coating" loading="lazy" width="400" height="320">
                     </div>
                     <h3 class="service-title">Graphene Coating</h3>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="assets/images/sunflim-protection.jpg" alt="Sunfilm Protection">
+                        <img src="assets/images/sunflim-protection.jpg" alt="Sunfilm Protection" loading="lazy" width="400" height="320">
                     </div>
                     <h3 class="service-title">Sunfilm Protection</h3>
                 </div>
@@ -210,12 +253,12 @@
                       limit heat exposure, and schedule periodic professional checks for lasting PPF performance.
                     </p>
                     <div class="ppf-buttons">
-                        <a href="tel:9840601420" class="btn btn-primary">Contact Us</a>
+                        <a href="tel:9840601420" class="btn btn-primary" aria-label="Contact Us by Phone">Contact Us</a>
                     </div>
                 </div>
                 
                 <div class="ppf-images">
-                    <img src="assets/result/Image.jpg" alt="PPF Maintenance">
+                    <img src="assets/result/Image.jpg" alt="PPF Maintenance" loading="lazy" width="800" height="500">
                 </div>
             </div>
         </div>
@@ -225,15 +268,14 @@
     <section class="reviews google-reviews">
         <div class="container">
             <div class="google-header">
-                <img src="assets/google.svg" alt="Google" class="google-logo">
+                <img src="assets/google.svg" alt="Google" class="google-logo" width="24" height="24" loading="lazy">
                 <span class="rating-badge">Excellent</span>
-                <div class="stars">★★★★★</div>
-                <span class="rating-text">4.7 | 7 reviews</span>
-                <a href="#" class="write-review-btn">Write a review</a>
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <span class="rating-text">4.7</span>
             </div>
             
             <div class="reviews-slider">
-                <button class="review-nav prev" id="prevReview">❮</button>
+                <button class="review-nav prev" id="prevReview" aria-label="Previous Review" type="button">❮</button>
                 
                 <div class="reviews-viewport">
                     <div class="reviews-track" id="reviewsContainer">
@@ -323,7 +365,7 @@
                     </div>
                 </div>
                 
-                <button class="review-nav next" id="nextReview">❯</button>
+                <button class="review-nav next" id="nextReview" aria-label="Next Review" type="button">❯</button>
             </div>
         </div>
     </section>
@@ -337,9 +379,9 @@
             <div class="faq-container">
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button" aria-expanded="false">
                         <span>Does Uniq Customz protection help against small scratches?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>Yes, it helps reduce the appearance of minor scratches and keeps your vehicle's surface protected.</p>
@@ -347,9 +389,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button" aria-expanded="false">
                         <span>What does Graphene and Borophene surface protection mean in car detailing?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>It refers to advanced coating technologies that enhance shine, resist contaminants, and improve long-term paint durability.</p>
@@ -357,9 +399,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button" aria-expanded="false">
                         <span>Can Uniq Customz clean only the interior?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>Yes, interior-only cleaning is available, including seats, carpets, dashboard, panels, and interiors without affecting the exterior paint.</p>
@@ -367,9 +409,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button" aria-expanded="false">
                         <span>Will Uniq Customz PPF affect the appearance of the car?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>No, paint protection film is transparent and enhances gloss while maintaining the car's original look.</p>
@@ -377,9 +419,9 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button" aria-expanded="false">
                         <span>Are there any offers available for Uniq Customz PPF services?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>Yes, discounts on ceramic coating and PPF services are offered from time to time. Contact directly or check the website for current deals.</p>

@@ -48,9 +48,25 @@ img {
     image-rendering: auto;
 }
 
+/* Optimize image loading */
+img[loading="lazy"] {
+    content-visibility: auto;
+}
+
+/* Prevent layout shift */
+img[width][height] {
+    aspect-ratio: attr(width) / attr(height);
+}
+
 video {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+/* Optimize video loading */
+.hero-video {
+    will-change: auto;
 }
 
 /* ==========================================
@@ -96,6 +112,11 @@ video {
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    will-change: transform;
 }
 
 .btn-primary,
@@ -126,6 +147,22 @@ a.btn-secondary {
 a.btn-secondary:hover {
     background: var(--text-white);
     color: var(--dark-bg);
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-btn,
+a.whatsapp-btn {
+    background: #25D366;
+    color: var(--text-white);
+    border: 2px solid #25D366;
+}
+
+.whatsapp-btn:hover,
+a.whatsapp-btn:hover {
+    background: #20BA5A;
+    border-color: #20BA5A;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
 }
 
 /* ==========================================
@@ -216,6 +253,8 @@ a.btn-secondary:hover {
     align-items: center;
     justify-content: center;
     touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    will-change: transform;
 }
 
 .phone-btn:hover {
@@ -244,6 +283,11 @@ a.cta-btn {
     transition: var(--transition);
     text-decoration: none;
     display: inline-block;
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    will-change: transform;
 }
 
 .cta-btn:hover,
@@ -263,6 +307,8 @@ a.cta-btn:hover {
     min-width: 44px;
     min-height: 44px;
     touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    will-change: transform;
 }
 
 .hamburger span {

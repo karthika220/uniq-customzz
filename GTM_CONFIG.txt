@@ -1,0 +1,36 @@
+==========================================
+GTM & GA4 Configuration Details
+==========================================
+
+Google Tag Manager Container ID:
+GTM-57C5CXMM
+
+Google Analytics 4 Measurement ID:
+G-0JJRL7GNJT
+
+==========================================
+Next Steps:
+==========================================
+
+1. ✅ GTM Container ID has been added to index.html
+   - Line 14: GTM script in <head>
+   - Line 24: GTM noscript in <body>
+
+2. Set up GA4 Configuration Tag in GTM:
+   - Go to GTM → Tags → New
+   - Tag Type: Google Analytics: GA4 Configuration
+   - Measurement ID: G-0JJRL7GNJT
+   - Trigger: All Pages
+   - Save as "GA4 Configuration"
+
+3. Create Conversion Event Tags:
+   - call_click (for all call buttons)
+   - whatsapp_click (for all WhatsApp buttons)
+
+4. Set up Google Ads Conversion Tracking:
+   - Create conversion actions in Google Ads
+   - Link to call_click and whatsapp_click events
+
+See GTM_SETUP_GUIDE.md for detailed instructions.
+
+==========================================
